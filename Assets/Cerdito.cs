@@ -16,7 +16,7 @@ public class Cerdito : MonoBehaviour
     {
           
     }
-
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Dinero"))
@@ -29,7 +29,8 @@ public class Cerdito : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-    }
+    }*/
+
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag("Dinero"))
