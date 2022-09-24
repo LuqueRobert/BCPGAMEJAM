@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6208990137794117353}
   - component: {fileID: 6208990137794117352}
   - component: {fileID: 6208990137794117355}
-  - component: {fileID: 6208990137794117364}
   - component: {fileID: 1601463117684631742}
+  - component: {fileID: -4203943393459695227}
   m_Layer: 0
   m_Name: mrGastos
   m_TagString: mrGasto
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6208990137794117359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.97, y: 5.25, z: 0}
-  m_LocalScale: {x: 1.114934, y: 1.7963581, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,11 +71,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -920315901
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.9811321, g: 0.4026344, b: 0.4026344, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2a4c643d15bedc847b4258eaa904e568, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,18 +101,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.9
---- !u!114 &6208990137794117364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6208990137794117359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e4baec1f5255be4093744db7a679d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1601463117684631742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,3 +114,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+--- !u!114 &-4203943393459695227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208990137794117359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4baec1f5255be4093744db7a679d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

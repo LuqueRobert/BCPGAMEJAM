@@ -6,6 +6,9 @@ TagManager:
   tags:
   - mrGasto
   - Dinero
+  - DineroPlata
+  - DineroCobre
+  - mrGasto2
   layers:
   - Default
   - TransparentFX
@@ -42,4 +45,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 1216811581
+    locked: 0
+  - name: Nubes
+    uniqueID: 4241100791
+    locked: 0
+  - name: Enemigos
+    uniqueID: 3374651395
+    locked: 0
+  - name: Porky
+    uniqueID: 979131289
+    locked: 0
+  - name: Puntaje
+    uniqueID: 409480035
     locked: 0
