@@ -9,6 +9,8 @@ TagManager:
   - DineroPlata
   - DineroCobre
   - mrGasto2
+  - conffeti
+  - canvas
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - conffeti
+  - canvas
   - 
   - 
   - 
@@ -60,4 +62,10 @@ TagManager:
     locked: 0
   - name: Puntaje
     uniqueID: 409480035
+    locked: 0
+  - name: conffeti
+    uniqueID: 382333003
+    locked: 0
+  - name: canvas
+    uniqueID: 2836313901
     locked: 0

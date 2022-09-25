@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Contador : MonoBehaviour
 {
@@ -35,7 +36,14 @@ public class Contador : MonoBehaviour
     public void restarPuntos(int danio)
     {
         puntaje -= danio;
-        dineros.text = puntaje.ToString();
+        if(puntaje < 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            dineros.text = puntaje.ToString();
+        }
     }
 
     // Update is called once per frame
