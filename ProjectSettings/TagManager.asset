@@ -9,6 +9,11 @@ TagManager:
   - DineroPlata
   - DineroCobre
   - mrGasto2
+  - hastaAqui
+  - Hamborguesos
+  - paredLeft
+  - paredRight
+  - Quieto
   layers:
   - Default
   - TransparentFX
@@ -54,6 +59,9 @@ TagManager:
     locked: 0
   - name: Enemigos
     uniqueID: 3374651395
+    locked: 0
+  - name: Coin
+    uniqueID: 2101222771
     locked: 0
   - name: Porky
     uniqueID: 979131289

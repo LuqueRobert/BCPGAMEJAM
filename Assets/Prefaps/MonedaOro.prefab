@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6763602172566683891}
   - component: {fileID: 6763602172566683890}
   - component: {fileID: 6763602172566683892}
+  - component: {fileID: 6110709261011543501}
+  - component: {fileID: 4756552711550520661}
   m_Layer: 0
   m_Name: MonedaOro
   m_TagString: Dinero
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6763602172566683855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.9973, y: 2.0662, z: 0}
-  m_LocalScale: {x: 1.2731185, y: 1.2544177, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -920315901
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: abe10589d8a940b4ca3fa0b69b573f54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,7 +111,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6763602172566683855}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -134,4 +136,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfad2697b3c8cc54886fdb9eeb60afa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valorCoin: 10
+  valorCoin: 50
+--- !u!58 &6110709261011543501
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763602172566683855}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.74
+--- !u!95 &4756552711550520661
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763602172566683855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7de90ddb497ab52498f2211dcf5d70ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

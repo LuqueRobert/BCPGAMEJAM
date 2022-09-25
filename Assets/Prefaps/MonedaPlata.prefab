@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5515313412353707874}
   - component: {fileID: 60906354945773146}
   - component: {fileID: 5597324142644746030}
+  - component: {fileID: 8983769004102218593}
+  - component: {fileID: 2648279177342024710}
   m_Layer: 0
   m_Name: MonedaPlata
   m_TagString: DineroPlata
@@ -72,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -920315901
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2c30e1c39159cc04fb67f1b3095cf396, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,7 +111,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669210878484761905}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -134,4 +136,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfad2697b3c8cc54886fdb9eeb60afa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valorCoin: 5
+  valorCoin: 25
+--- !u!58 &8983769004102218593
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669210878484761905}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.86
+--- !u!95 &2648279177342024710
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669210878484761905}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ca6ad6564a18b54d8219d8653890061, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -5,14 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Rigidbody2D playerRB;
-    
-    // Start is called before the first frame update
+    private int hamboVida;
+
+
     void Start()
     {
-        playerRB = GetComponent<Rigidbody2D>();
-
+        hamboVida = 3;
     }
-
+    
     
     void Update()
     {
@@ -28,20 +28,26 @@ public class Enemy : MonoBehaviour
                     var kill = hitInfo.transform.gameObject.name;
                     var otro = hitInfo.transform.gameObject;
 
-
                     string indentificar = kill.Substring(0, 5);
 
-                    if (indentificar == "enemy")
+                    if (indentificar == "helad")
                     {
                         Destroy(otro, .0f);
                     }
+                    if (indentificar == "onigi")
+                    {
+                        Destroy(otro, .0f);
+                    }
+                    if (indentificar == "hambo")
+                    {
+                        hamboVida--;
+                        if (hamboVida == 0)
+                        {
+                            Destroy(otro, .0f);
+                        }
+                    }
 
                 }
-
-
-
-
-
 
 
             }
@@ -58,14 +64,24 @@ public class Enemy : MonoBehaviour
                 var kill = hitInfo.transform.gameObject.name;
                 var otro = hitInfo.transform.gameObject;
 
-
                 string indentificar = kill.Substring(0, 5);
 
-                if (indentificar == "enemy")
+                if (indentificar == "helad")
                 {
                     Destroy(otro, .0f);
                 }
-
+                if (indentificar == "onigi")
+                {
+                    Destroy(otro, .0f);
+                }
+                if (indentificar == "hambo")
+                {
+                    hamboVida--;
+                    if (hamboVida == 0)
+                    {
+                        Destroy(otro, .0f);
+                    }
+                }
             }
         }
 

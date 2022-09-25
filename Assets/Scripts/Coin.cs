@@ -8,9 +8,12 @@ public class Coin : MonoBehaviour
     [SerializeField] private int valorCoin = 10;
 
     private AudioControler soundManager;
+    private Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        animator.SetTrigger("Aparecer");
+        Destroy(gameObject,5f);
     }
 
     void Update()
@@ -33,7 +36,7 @@ public class Coin : MonoBehaviour
                     AudioControler.instancia.seleccionado(0, 1f);
                     Contador.instancia.sumarPuntos(valorCoin);
                     Destroy(otro, .0f);
-
+                    
                 }
 
             }
