@@ -9,10 +9,8 @@ public class CloudScript : MonoBehaviour
     [SerializeField] private float _endPosX;
 
     // Start is called before the first frame update
-    public void Start(float speed, float endPosX)
+    public void Start()
     {
-        _speed = speed;
-        _endPosX = endPosX;
     }
 
     // Update is called once per frame

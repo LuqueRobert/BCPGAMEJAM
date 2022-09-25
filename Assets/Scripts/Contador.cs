@@ -11,6 +11,8 @@ public class Contador : MonoBehaviour
     //Instancia para publicar funciones a otros scripts
     public static Contador instancia;
 
+    [SerializeField] private GameObject floatingTextPrefab;
+
     void Start()
     {
         dineros = gameObject.GetComponent<TextMeshProUGUI>();
@@ -24,6 +26,11 @@ public class Contador : MonoBehaviour
     {
         puntaje += moneda;
         dineros.text = puntaje.ToString();
+        string s = moneda.ToString();
+        if (puntaje!=0)
+        {
+            ShowDamage(s);
+        }
     }
     public void restarPuntos(int danio)
     {
@@ -35,5 +42,19 @@ public class Contador : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void ShowDamage(string text)
+    {
+        Debug.Log(text);
+
+        if (floatingTextPrefab)
+        {
+            GameObject textPrefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
+            Debug.Log(textPrefab.GetComponentInChildren<TextMesh>());
+
+            textPrefab.GetComponentInChildren<TextMesh>().text = "+" + text;
+
+        }
     }
 }
